@@ -2,7 +2,7 @@ package loose.oose.fis.documents;
 
 import java.util.Arrays;
 
-public class JSON extends Document {
+public class raul extends Document {
     public JSON(String[] continut) {
         super(continut);
     }
@@ -13,7 +13,7 @@ public class JSON extends Document {
         int      pos = 0;
 
         for (String cuvant : continut) {
-            if (!cuvant.contains("!!!!!")) {
+            if (!cuvant.contains("........")) {
                 res[pos] = cuvant;
                 pos++;
             }
@@ -27,3 +27,4 @@ public class JSON extends Document {
         return "JSON " + super.toString();
     }
 }
+
